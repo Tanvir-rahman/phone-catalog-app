@@ -1,0 +1,13 @@
+[
+    {
+      "announced": "2018, September 12",
+      "id": "iphone-xs",
+      "type": "mobile",
+      "imageUrl": "../images/iphone-xs.png",
+      "name": "Iphone XS",
+      "price": 100,
+      "screen": "14.1 inches",
+      "capacity": "64 GB",
+      "ram": "4GB"
+    }
+]

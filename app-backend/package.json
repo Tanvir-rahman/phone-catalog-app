@@ -1,0 +1,11 @@
+{
+  "name": "app-backend",
+  "version": "1.0.0",
+  "description": "phone catalog app backend",
+  "main": "app.js",
+  "author": "Tanvir Rahman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
