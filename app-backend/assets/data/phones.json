@@ -1,15 +1,28 @@
 [
     {
-      "announced": "2018, September 12",
-      "id": "iphone-xs",
-      "type": "mobile",
-      "imageUrl": "iphone-xs.png",
-      "title": "Iphone XS",
-      "description": "Apple iPhone XS · Released 2018, September 21",
-      "color": "Grey",
-      "price": 100,
-      "screen": "14.1 inches",
-      "capacity": "64 GB",
-      "ram": "4GB"
+        "announced": "2018, September 12",
+        "id": "iphone-xs",
+        "type": "mobile",
+        "imageUrl": "iphone-xs.png",
+        "title": "Iphone XS",
+        "description": "Apple iPhone XS · Released 2018, September 21",
+        "color": "Grey",
+        "price": 100,
+        "screen": "4.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
+    },
+    {
+        "announced": "2019, September 20",
+        "id": "iphone-11",
+        "type": "mobile",
+        "imageUrl": "iphone-11.png",
+        "title": "Iphone 11",
+        "description": "Apple iPhone 11 · Released 2019, September 20",
+        "color": "Grey",
+        "price": 200,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
     }
 ]
