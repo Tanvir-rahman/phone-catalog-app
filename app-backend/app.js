@@ -27,7 +27,7 @@ app.get('/phones/:id', (req, res) => {
       data: {
         phone
       }
-      });
+    });
   } else {
     res.status(404).json({
       status: 'fail',
