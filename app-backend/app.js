@@ -19,5 +19,22 @@ app.get('/phones', (req, res) => {
   });
 });
 
+app.get('/phones/:id', (req, res) => {
+  const phone = phones.find(phone => phone.id === req.params.id);
+  if (phone) {
+    res.status(200).json({
+      status: 'success',
+      data: {
+        phone
+      }
+    });
+  } else {
+    res.status(404).json({
+      status: 'fail',
+      message: 'Phone not found'
+    });
+  }
+});
+
 const port = 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
