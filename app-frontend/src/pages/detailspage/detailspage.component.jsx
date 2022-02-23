@@ -1,13 +1,32 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect, Suspense } from 'react';
+import { connect  } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+
 import './detailspage.styles.scss';
 
-const DetailsPage = () => {
+import { fetchPhoneDetails } from '@store/phones/phone.actions';
+
+import Spinner from '@components/spinner/spinner.component';
+import PhoneDetailContainer from '@components/phone-detail/phone-detail.container';
+
+const DetailsPage = ({ fetchPhoneDetails, history, match }) => {
+  useEffect(() => {
+    fetchPhoneDetails(match.params.phoneId);
+  }, [fetchPhoneDetails, match.params.phoneId]);
+
   return (
-    <div>
-      <h1 className="text-red">Details Page</h1>
-    </div>
+    <Suspense fallback={<Spinner />}>
+      <button onClick={history.goBack}>
+        Back
+      </button>
+      <PhoneDetailContainer />
+    </Suspense>
   );
 };
 
-export default DetailsPage;
+
+const mapDispatchToProps = dispatch => ({
+  fetchPhoneDetails: phoneId => dispatch(fetchPhoneDetails(phoneId))
+});
+
+export default withRouter(connect(null, mapDispatchToProps)(DetailsPage));

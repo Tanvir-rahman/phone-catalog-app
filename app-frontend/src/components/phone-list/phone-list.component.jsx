@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -6,13 +7,17 @@ import { phoneList } from '@store/phones/phone.selectors';
 
 import './phone-list.styles.scss';
 
-export const PhoneListComp = ({ phones }) => {
+export const PhoneListComp = ({ phones, history }) => {
   return (
     <div className="phone-list">
       {
-        phones.map(phone => (
-          <div key={phone.id}>
-            <div>{phone.title}</div>
+        phones.map(({ id, ...otherPhoneProps }) => (
+          <div
+            key={id}
+            {...otherPhoneProps}
+            onClick={() => history.push(`/phones/${id}`)}
+          >
+            <div>{id}</div>
           </div>
         ))
       }
@@ -24,4 +29,4 @@ const mapStateToProps = createStructuredSelector({
   phones: phoneList
 });
 
-export default connect(mapStateToProps)(PhoneListComp);
+export default withRouter(connect(mapStateToProps)(PhoneListComp));
