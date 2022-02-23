@@ -7,12 +7,14 @@
       "enzyme-to-json/serializer"
     ],
     "moduleNameMapper": {
+      "^@assets/(.*)$": "<rootDir>/src/assets/$1",
       "^@components/(.*)$": "<rootDir>/src/components/$1",
       "^@config/(.*)$": "<rootDir>/src/config/$1",
       "^@pages/(.*)$": "<rootDir>/src/pages/$1",
       "^@store/(.*)$": "<rootDir>/src/store/$1",
       "^@services/(.*)$": "<rootDir>/src/services/$1"
-    }
+    },
+    "collectCoverage": true
   },
   "dependencies": {
     "axios": "^0.26.0",
@@ -42,7 +44,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "react-app-rewired test --coverage --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

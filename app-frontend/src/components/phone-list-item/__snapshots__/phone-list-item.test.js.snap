@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneListItem component should render PhoneListItem component 1`] = `
+<div
+  onClick={[Function]}
+>
+  <div
+    className="phone"
+  >
+    <div
+      className="phone-image"
+    >
+      <img
+        alt="Iphone 11"
+        src="iphone-11.png"
+      />
+    </div>
+    <div
+      className="phone-info"
+    >
+      <h5
+        className="info-title"
+      >
+        Iphone 11
+      </h5>
+      <h6
+        className="info-price"
+      >
+        $
+        100
+      </h6>
+    </div>
+  </div>
+</div>
+`;
