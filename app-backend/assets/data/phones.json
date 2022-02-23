@@ -24,5 +24,70 @@
         "screen": "6.1 inches",
         "capacity": "64 GB",
         "ram": "4GB"
+    },
+    {
+        "announced": "2019, September 20",
+        "id": "iphone-11-pro",
+        "type": "mobile",
+        "imageurl": "iphone-11-pro.png",
+        "title": "Iphone 11 pro",
+        "description": "Apple iPhone 11 pro· Released 2019, September 20",
+        "color": "Grey",
+        "price": 300,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "6GB"
+    },
+    {
+        "announced": "2019, September 21",
+        "id": "iphone-x",
+        "type": "mobile",
+        "imageurl": "iphone-x.png",
+        "title": "Iphone X",
+        "description": "Apple iPhone X · Released 2019, September 21",
+        "color": "Grey",
+        "price": 200,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
+    },
+    {
+        "announced": "2019, September 20",
+        "id": "iphone-12",
+        "type": "mobile",
+        "imageurl": "iphone-x.png",
+        "title": "Iphone 12",
+        "description": "Apple iPhone 12 · Released 2019, September 20",
+        "color": "Grey",
+        "price":400,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
+    },
+    {
+        "announced": "2019, September 20",
+        "id": "iphone-13",
+        "type": "mobile",
+        "imageurl": "iphone-xs.png",
+        "title": "Iphone 13",
+        "description": "Apple iPhone 13 · Released 2019, September 20",
+        "color": "Grey",
+        "price": 500,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
+    },
+    {
+        "announced": "2019, September 20",
+        "id": "iphone-13-pro",
+        "type": "mobile",
+        "imageurl": "iphone-11.png",
+        "title": "Iphone 13 pro",
+        "description": "Apple iPhone 13 pro· Released 2019, September 20",
+        "color": "Grey",
+        "price": 900,
+        "screen": "6.1 inches",
+        "capacity": "64 GB",
+        "ram": "4GB"
     }
 ]
