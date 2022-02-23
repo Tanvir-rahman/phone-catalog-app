@@ -4,7 +4,7 @@ import { compose } from 'redux';
 
 import { isPhoneListFetching } from '@store/phones/phone.selectors';
 import WithSpinner from '@components/with-spinner/with-spinner.component';
-import PhoneList from './phone-list.component';
+import PhoneListComponent from './phone-list.component';
 
 const mapStateToProps = createStructuredSelector({
   isLoading: isPhoneListFetching
@@ -13,6 +13,6 @@ const mapStateToProps = createStructuredSelector({
 const PhoneListContainer = compose(
   connect(mapStateToProps),
   WithSpinner
-)(PhoneList);
+)(PhoneListComponent);
 
 export default PhoneListContainer;

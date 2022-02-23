@@ -7,7 +7,7 @@ import { phoneList } from '@store/phones/phone.selectors';
 
 import './phone-list.styles.scss';
 
-export const PhoneListComp = ({ phones, history }) => {
+export const PhoneListComponent = ({ phones, history }) => {
   return (
     <div className="phone-list">
       {
@@ -29,4 +29,4 @@ const mapStateToProps = createStructuredSelector({
   phones: phoneList
 });
 
-export default withRouter(connect(mapStateToProps)(PhoneListComp));
+export default withRouter(connect(mapStateToProps)(PhoneListComponent));
