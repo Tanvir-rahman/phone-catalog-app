@@ -6,6 +6,11 @@ const INITIAL_STATE = {
     isFetching: false,
     errorMessage: undefined,
   },
+  phoneDetails: {
+    details: null,
+    isFetching: false,
+    errorMessage: undefined,
+  }
 }
 
 const phoneReducer = (state = INITIAL_STATE, action) => {
@@ -36,6 +41,32 @@ const phoneReducer = (state = INITIAL_STATE, action) => {
           errorMessage: action.payload,
         }
       };
+    case PhoneActionTypes.FETCH_PHONE_DETAILE_START:
+      return {
+        ...state,
+        phoneDetails: {
+          ...state.phoneDetails,
+          isFetching: true,
+        }
+      }
+    case PhoneActionTypes.FETCH_PHONE_DETAILE_SUCCESS:
+      return {
+        ...state,
+        phoneDetails: {
+          ...state.phoneDetails,
+          isFetching: false,
+          details: action.payload,
+        }
+      }
+    case PhoneActionTypes.FETCH_PHONE_DETAILE_FAILURE:
+      return {
+        ...state,
+        phoneDetails: {
+          ...state.phoneDetails,
+          isFetching: false,
+          errorMessage: action.payload,
+        }
+      }
     default: return state;
   }
 };

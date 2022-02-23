@@ -16,3 +16,19 @@ export const isPhoneListLoaded = createSelector(
   [phone],
   phoneSelector => !!phoneSelector.phones.list
 );
+
+
+export const phoneDetails = createSelector(
+  [phone],
+  phoneSelector => phoneSelector.phoneDetails.details || null
+);
+
+export const isPhoneDetailsFetching = createSelector(
+  [phone],
+  phoneSelector => phoneSelector.phoneDetails.isFetching
+);
+
+export const isPhoneDetailsLoaded = createSelector(
+  [phone],
+  phoneSelector => !!phoneSelector.phoneDetails.details
+);
