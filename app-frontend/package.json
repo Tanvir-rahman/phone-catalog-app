@@ -2,10 +2,19 @@
   "name": "app-frontend",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "^@config/(.*)$": "<rootDir>/src/config/$1",
+      "^@pages/(.*)$": "<rootDir>/src/pages/$1",
+      "^@store/(.*)$": "<rootDir>/src/store/$1",
+      "^@services/(.*)$": "<rootDir>/src/services/$1"
+    }
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.26.0",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
@@ -55,6 +64,9 @@
     ]
   },
   "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1"
   }
