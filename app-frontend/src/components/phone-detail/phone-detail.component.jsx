@@ -12,10 +12,7 @@ export const PhoneDetailComponent = ({ details, history }) => {
       <div className='title'>Details</div>
       <div className='details-info'>
         <div className='details-info-img'>
-          <img
-            src={require('../../assets/images/' + details.imageurl)}
-            alt={details.title}
-          />
+        <img src={require(`@assets/images/${details.imageurl}`)} alt={details.title} />
         </div>
         <div className='details-info-description'>
           <p>

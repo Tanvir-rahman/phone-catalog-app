@@ -10,7 +10,7 @@ export const PhoneListItemComponent = ({ id, title, price, imageurl, history }) 
         <div className="phone">
           <div className="phone-image">
             <img 
-              src={require('../../assets/images/' + imageurl)}
+              src={require('@assets/images/' + imageurl)}
               alt={title}
             />
           </div>
