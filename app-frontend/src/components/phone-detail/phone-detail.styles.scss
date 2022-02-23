@@ -1,0 +1,25 @@
+.phone-details {
+  .details-info {
+    display: flex;
+    .details-info-img {
+      width: 30%;
+      img {
+        width: 100%;
+      } 
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .phone-details {
+    .details-info {
+      flex-direction: column;
+      .details-info-img {
+        width: 100%;
+      }
+    }
+  }
+}
