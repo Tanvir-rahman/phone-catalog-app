@@ -15,8 +15,8 @@ export const PhoneListItemComponent = ({ id, title, price, imageurl, history }) 
             />
           </div>
           <div className="phone-info">
-            <h5>{title}</h5>
-            <h6>${price}</h6>
+            <h5 className="info-title">{title}</h5>
+            <h6 className="info-price">${price}</h6>
           </div>
         </div>
       }

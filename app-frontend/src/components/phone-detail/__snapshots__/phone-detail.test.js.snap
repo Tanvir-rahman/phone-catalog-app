@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneDetailComponent component should render PhoneDetailComponent component 1`] = `
+<div
+  className="phone-details"
+>
+  <div
+    className="title"
+  >
+    Details
+  </div>
+  <div
+    className="details-info"
+  >
+    <div
+      className="details-info-img"
+    >
+      <img
+        alt="Iphone 11"
+        src="iphone-11.png"
+      />
+    </div>
+    <div
+      className="details-info-description"
+    >
+      <p
+        className="details-title"
+      >
+        <span>
+          Title: 
+        </span>
+        Iphone 11
+      </p>
+      <p
+        className="details-screen"
+      >
+        <span>
+          Screen: 
+        </span>
+        6.1 inches
+      </p>
+      <p
+        className="details-capacity"
+      >
+        <span>
+          Capacity: 
+        </span>
+        64 GB
+      </p>
+      <p
+        className="details-ram"
+      >
+        <span>
+          Ram: 
+        </span>
+        4GB
+      </p>
+      <p
+        className="details-color"
+      >
+        <span>
+          Color: 
+        </span>
+        Grey
+      </p>
+      <p
+        className="details-price"
+      >
+        <span>
+          Price: 
+        </span>
+        $
+        100
+      </p>
+      <p>
+        Apple iPhone 11 · Released 2019, September 20
+      </p>
+    </div>
+  </div>
+</div>
+`;
