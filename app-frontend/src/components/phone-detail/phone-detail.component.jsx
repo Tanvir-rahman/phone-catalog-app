@@ -40,7 +40,7 @@ export const PhoneDetailComponent = ({ details, history }) => {
           </p>
           <p>
             <span>Price: </span>
-            {details.price}
+            ${details.price}
           </p>
           <p>{details.description}</p>
         </div>
