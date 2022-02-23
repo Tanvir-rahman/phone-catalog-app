@@ -39,23 +39,23 @@ describe('PhoneDetailComponent component', () => {
     expect(wrapper.find('.details-title').text()).toBe(`Title: ${mockTitle}`);
   });
 
-  it('should render screen prop in Name Container', () => {
+  it('should render screen prop in Screen Container', () => {
     expect(wrapper.find('.details-screen').text()).toBe(`Screen: ${mockScreen}`);
   });
 
-  it('should render capacity prop in Name Container', () => {
+  it('should render capacity prop in Capacity Container', () => {
     expect(wrapper.find('.details-capacity').text()).toBe(`Capacity: ${mockCapacity}`);
   });
 
-  it('should render ram prop in Name Container', () => {
+  it('should render ram prop in Ram Container', () => {
     expect(wrapper.find('.details-ram').text()).toBe(`Ram: ${mockRam}`);
   });
 
-  it('should render color prop in Name Container', () => {
+  it('should render color prop in Color Container', () => {
     expect(wrapper.find('.details-color').text()).toBe(`Color: ${mockColor}`);
   });
 
-  it('should render price prop in Name Container', () => {
+  it('should render price prop in Price Container', () => {
     expect(wrapper.find('.details-price').text()).toBe(`Price: $${mockPrice}`);
   });
 });

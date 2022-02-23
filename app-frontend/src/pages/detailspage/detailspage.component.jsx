@@ -9,7 +9,7 @@ import { fetchPhoneDetails } from '@store/phones/phone.actions';
 import Spinner from '@components/spinner/spinner.component';
 import PhoneDetailContainer from '@components/phone-detail/phone-detail.container';
 
-const DetailsPage = ({ fetchPhoneDetails, history, match }) => {
+export const DetailsPage = ({ fetchPhoneDetails, history, match }) => {
   useEffect(() => {
     fetchPhoneDetails(match.params.phoneId);
   }, [fetchPhoneDetails, match.params.phoneId]);

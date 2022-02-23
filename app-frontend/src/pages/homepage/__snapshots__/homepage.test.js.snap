@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage component should render Homepage component 1`] = `
+<Suspense
+  fallback={<Spinner />}
+  fetchPhoneList={[MockFunction]}
+>
+  <h1
+    className="title"
+  >
+     Phone Catalog App 
+  </h1>
+  <lazy />
+</Suspense>
+`;

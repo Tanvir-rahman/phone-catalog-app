@@ -11,7 +11,7 @@ const PhoneListContainer = lazy(() =>
   import('@components/phone-list/phone-list.container')
 );
 
-const HomePage = ({ fetchPhoneList, match }) => {
+export const HomePage = ({ fetchPhoneList, match }) => {
   useEffect(() => {
     fetchPhoneList();
   }, [fetchPhoneList]);

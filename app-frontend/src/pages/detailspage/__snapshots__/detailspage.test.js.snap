@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage component should render DetailsPage component 1`] = `
+<Suspense
+  fallback={<Spinner />}
+  fetchPhoneDetails={[MockFunction]}
+  history={
+    Object {
+      "goBack": [MockFunction],
+    }
+  }
+  match={
+    Object {
+      "params": Object {
+        "phoneId": "iphone-11",
+      },
+    }
+  }
+>
+  <button
+    onClick={[MockFunction]}
+  >
+    Back
+  </button>
+  <Connect(Component) />
+</Suspense>
+`;
