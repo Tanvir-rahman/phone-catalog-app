@@ -18,6 +18,7 @@ const HomePage = ({ fetchPhoneList, match }) => {
 
   return (
     <Suspense fallback={<Spinner />}>
+      <h1 className="title"> Phone Catalog App </h1>
       <PhoneListContainer />
     </Suspense>
   );

@@ -5,20 +5,19 @@ import { createStructuredSelector } from 'reselect';
 
 import { phoneList } from '@store/phones/phone.selectors';
 
+import PhoneListItem from '@components/phone-list-item/phone-list-item.component';
 import './phone-list.styles.scss';
 
-export const PhoneListComp = ({ phones, history }) => {
+export const PhoneListComponent = ({ phones, history }) => {
   return (
     <div className="phone-list">
       {
         phones.map(({ id, ...otherPhoneProps }) => (
-          <div
+          <PhoneListItem 
             key={id}
-            {...otherPhoneProps}
-            onClick={() => history.push(`/phones/${id}`)}
-          >
-            <div>{id}</div>
-          </div>
+            id={id}
+            { ...otherPhoneProps }
+          />
         ))
       }
     </div>
@@ -29,4 +28,4 @@ const mapStateToProps = createStructuredSelector({
   phones: phoneList
 });
 
-export default withRouter(connect(mapStateToProps)(PhoneListComp));
+export default withRouter(connect(mapStateToProps)(PhoneListComponent));
