@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
 
-import HomePage from '@pages/homepage/homepage.component';
-import DetailsPage from '@pages/detailspage/detailspage.component';
-import NotFound from '@pages/notfound/notfound.component';
+const HomePage = lazy(() => import('@pages/homepage/homepage.component'));
+const DetailsPage = lazy(() => import('@pages/detailspage/detailspage.component'));
+const NotFound = lazy(() => import('@pages/notfound/notfound.component'));
 
 function App() {
   return (
