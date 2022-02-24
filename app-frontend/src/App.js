@@ -5,6 +5,7 @@ import './App.css';
 
 import HomePage from '@pages/homepage/homepage.component';
 import DetailsPage from '@pages/detailspage/detailspage.component';
+import NotFound from '@pages/notfound/notfound.component';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/phones" component={HomePage} />
       <Route path="/phones/:phoneId" component={DetailsPage} />
+      <Route component={NotFound} />
     </Switch>
   );
 }
